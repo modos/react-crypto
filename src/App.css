@@ -1,38 +1,217 @@
+/* Rest Default Brower Styles */
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  background-color: #fff;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 .App {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* First Page */
+
+.main {
+  background-image: url('./assets/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+}
+
+.sub-heading {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.crypto-text {
+  color: orange;
+}
+
+.search-button {
+  margin-top: 16px;
+  width: 40%;
+  background-color: orange;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  border: 10px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.search-button:hover {
+  background-color: green;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  padding-top: 8px;
+  margin: 0px;
+}
+
+.theme-button {
+  display: inline-block;
+  border-color: gray;
+  border-radius: 16px;
+  border-style: solid;
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 64px;
+}
+
+.footer {
+  display: flex;
+  justify-content: right;
+  gap: 128px;
+  padding-right: 128px;
+}
+
+.history-item {
+  color: white;
+  border: 2px;
+  width: 128px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: gainsboro;
+  padding: 16px;
+}
+
+/* Search Page  */
+
+.search-page {
+  background-color: rgb(25, 24, 24);
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.search-page-nav {
+  padding: 8px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 512px;
+  width: 100%;
+}
+
+.search-page-nav button {
+  color: white;
+  background-color: transparent;
+  border-style: solid;
+  border-color: beige;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.search-page-heading {
+  background-color: darkgrey;
+  height: 256px;
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-page-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.search-page-main input {
+  width: 80%;
+  background-color: transparent;
+  color: grey;
+  padding: 10px;
+  margin-top: 16px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: gray;
+}
+
+.search-page-table-component {
+  height: 100%;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.search-page-table {
+  width: 80%;
+}
+
+.search-page-table-row td {
+  border-bottom: 1px solid grey;
+  padding: 2px;
+}
+
+.search-page-table-row:hover {
+  border-bottom: 1px solid grey;
+  background-color: lightgray;
+  color: black;
+}
+
+.search-page-table-heading {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+}
+
+/* Coin Details Page */
+
+.coin-page {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(25, 24, 24);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.coin-page-main {
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-page-main-desc {
+  text-align: justify;
+  margin-bottom: 32px;
 }
